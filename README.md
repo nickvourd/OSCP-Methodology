@@ -40,13 +40,13 @@ OSCP Methodology
 #### MS08-067
 git clone https://github.com/andyacer/ms08_067.git
 * configuration
- * pip install impacket
+  * pip install impacket
 * 2 reverse options for shellcoding:
- * Use the third with 443
- * Use the third with default
- * Use second with default
- * Use second with port of third or another port
+  * Use the third with 443
+  * Use the third with default
+  * Use second with default
+  * Use second with port of third or another port
 * Choose the right option of menu.
- * Find OS of machine
- * Guess lanhuage
+  * Find OS of machine
+  * Guess lanhuage
 * Needs listener
