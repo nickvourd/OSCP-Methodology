@@ -34,3 +34,7 @@ OSCP Methodology
 * enum4linux
 * smbclient
  
+
+## Exploits
+### Windows
+#### MS08-067
