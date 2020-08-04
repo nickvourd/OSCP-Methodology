@@ -9,16 +9,16 @@ OSCP Methodology
 #### Ftp
 * service -> exploit
 * banner
-* default creds
-* default creds with nsr
+* default creds (hydra)
+* default creds with nsr (hydra)
 * Anonymous login
 * nmap info
 
 #### SSH
 * service -> exploit
 * banner
-* default creds
-* default creds with nsr
+* default creds (hydra)
+* default creds with nsr (hydra)
 * nmap info
 
 #### Samba
