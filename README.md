@@ -27,6 +27,7 @@ OSCP Methodology
   * Computer name/NetBIOS name
   * Domain name
   * Workgroup
+  * OS of machine
 
 * service (OS samba or nmap service header (139 & 445)) -> exploit
 * nmap -sV -sC --open -T4  -p 139,445 --script=vuln --script-args=unsafe=1 <ip>
