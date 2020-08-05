@@ -104,5 +104,5 @@ git clone https://github.com/worawit/MS17-010.git
  
  * Watson
    * Find .NET latest version of victim:
-     ###### dir %windir%\Microsoft.NET\Framework /AD
+     ##### dir %windir%\Microsoft.NET\Framework /AD
    
