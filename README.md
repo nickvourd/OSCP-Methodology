@@ -85,4 +85,24 @@ git clone https://github.com/worawit/MS17-010.git
 * no need listener (insta run)
 
 
+## Privilege Escalation
+### Windows
+* systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+  * searchsploit
+  * google
+
+* systeminfo
+  * Architecture
+  * Numbers of Proccessors
+  * Domain
+  * HotFixes
+  * System Locale
+  * Input Locale
+  
+ * Serlock
+   * Config: Add to the last line the "Find-AllVulns".
  
+ * Watson
+   * Find .NET latest version of victim:
+     ###### dir %windir%\Microsoft.NET\Framework /AD
+   
