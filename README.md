@@ -12,6 +12,7 @@ OSCP Methodology
 * default creds (hydra)
 * default creds with nsr (hydra)
 * Anonymous login
+* Put files
 * nmap info
 
 #### SSH
