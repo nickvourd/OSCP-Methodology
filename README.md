@@ -105,4 +105,6 @@ git clone https://github.com/worawit/MS17-010.git
  * Watson
    * Find .NET latest version of victim:
      ##### dir %windir%\Microsoft.NET\Framework /AD
+   * Fow older than windows 10 download zip version of watson v.1: https://github.com/rasta-mouse/Watson/tree/486ff207270e4f4cadc94ddebfce1121ae7b5437
+   * Build exe to visual studio
    
