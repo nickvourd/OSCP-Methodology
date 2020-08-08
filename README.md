@@ -126,7 +126,7 @@ git clone https://github.com/worawit/MS17-010.git
   * Input Locale
  
  * Numbers of cores of processors: 
-  ##### WMIC CPU Get DeviceID,NumberOfCores,NumberOfLogicalProcessors
+   ##### WMIC CPU Get DeviceID,NumberOfCores,NumberOfLogicalProcessors
  
  * Serlock
    * Config: Add to the last line the "Find-AllVulns"
