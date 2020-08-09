@@ -58,6 +58,7 @@ OSCP Methodology
  * Play around with burpsuite (Spider, repeater)
  
  * if web page contains big articles qith many words use cewl:
+   ##### cewl -w custom_worlist \<ip> -d \<depth>
 
 ## Exploits
 ### Windows
