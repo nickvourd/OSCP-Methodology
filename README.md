@@ -137,6 +137,7 @@ git clone https://github.com/worawit/MS17-010.git
  * Numbers of cores of processors: 
    ##### WMIC CPU Get DeviceID,NumberOfCores,NumberOfLogicalProcessors
    
+
  * Windows-Exploit-Suggester
    * python windows-exploit-suggester.py --database 2020-08-09-mssb.xls --systeminfo grandpa.txt
  
