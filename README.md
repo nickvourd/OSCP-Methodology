@@ -147,14 +147,14 @@ git clone https://github.com/worawit/MS17-010.git
  * Windows Privileges:
    ##### whoami /priv
    * More info here: https://hackinparis.com/data/slides/2019/talks/HIP2019-Andrea_Pierini-Whoami_Priv_Show_Me_Your_Privileges_And_I_Will_Lead_You_To_System.pdf
-    * SeDebugPrivilege
-    * SeRestorePrivilege
-    * SeBackupPrivilege
-    * SeTakeOwnershipPrivilege
-    * SeTcbPrivilege
-    * SeCreateToken Privilege
-    * SeLoadDriver Privilege
-    * SeImpersonate & SeAssignPrimaryToken Priv.
+     * SeDebugPrivilege
+     * SeRestorePrivilege
+     * SeBackupPrivilege
+     * SeTakeOwnershipPrivilege
+     * SeTcbPrivilege
+     * SeCreateToken Privilege
+     * SeLoadDriver Privilege
+     * SeImpersonate & SeAssignPrimaryToken Priv.
    
  * Windows-Exploit-Suggester
    * python windows-exploit-suggester.py --database 2020-08-09-mssb.xls --systeminfo grandpa.txt
