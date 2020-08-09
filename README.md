@@ -30,6 +30,12 @@ OSCP Methodology
   * Domain name
   * Workgroup
   * OS of machine
+  
+#### http/https
+ * gobuster:
+   ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/common.txt -S '200,204,301,302,307,403,500' -e -t [number] -o common.results
+   ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/big.txt -S '200,204,301,302,307,403,500' -e -t [number] -o big.results
+
 
 * service (OS samba or nmap service header (139 & 445)) -> exploit
 ##### nmap -sV -sC --open -T4  -p 139,445 --script=vuln --script-args=unsafe=1 <ip>
