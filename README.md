@@ -55,7 +55,9 @@ OSCP Methodology
      ###### gobuster dir -u [url] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -s '200,204,301,302,307,403,500' -e -t [number] -o medium.results
      ###### gobuster dir -u [url] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -s '200,204,301,302,307,403,500' -e -t [number] -x .exte,.exte,.exte -o exte.medium.results
  
- * Play arround with burpsuite
+ * Play around with burpsuite (Spider, repeater)
+ 
+ * if web page contains big articles qith many words use cewl:
 
 ## Exploits
 ### Windows
