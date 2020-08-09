@@ -39,6 +39,7 @@ OSCP Methodology
  * gobuster:
    ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/common.txt -s '200,204,301,302,307,403,500' -e -t [number] -o common.results
    ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/big.txt -s '200,204,301,302,307,403,500' -e -t [number] -o big.results
+   ###### gobuster dir -u [url] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -s '200,204,301,302,307,403,500' -e -t [number] -o medium.results
    * -x .exte,.exte for extensions
 
 ## Exploits
