@@ -7,7 +7,7 @@ OSCP Methodology
 ##### nmap \<ip> -sV -sC -O -T4 --traceroute -p - -oA ~/path/filename
 
 #### Ftp
-* service -> exploit
+* service -> exploit (searchsploit + google)
 * banner
 * default creds (hydra)
 * default creds with nsr (hydra)
@@ -17,7 +17,7 @@ OSCP Methodology
 * nmap info
 
 #### SSH
-* service -> exploit
+* service -> exploit (searchsploit + google)
 * banner
 * default creds (hydra)
 * default creds with nsr (hydra)
@@ -30,17 +30,31 @@ OSCP Methodology
   * Domain name
   * Workgroup
   * OS of machine
-* service (OS samba or nmap service header (139 & 445)) -> exploit
+* service (OS samba or nmap service header (139 & 445)) -> exploit (searchsploit + google)
   ##### nmap -sV -sC --open -T4  -p 139,445 --script=vuln --script-args=unsafe=1 <ip>
 * enum4linux
 * smbclient
 
 #### Http/Https
+ * Service -> exploit (searchsploit + google)
+ * nmap info
+ * if directories from nmap output, OPTIONS request for put http method availability.
+ * nikto:
+   * default
+   * CGI all
+ * source
  * gobuster:
-   ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/common.txt -s '200,204,301,302,307,403,500' -e -t [number] -o common.results
-   ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/big.txt -s '200,204,301,302,307,403,500' -e -t [number] -o big.results
-   ###### gobuster dir -u [url] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -s '200,204,301,302,307,403,500' -e -t [number] -o medium.results
-   * -x .exte,.exte for extensions
+   * with common.txt:
+     ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/common.txt -s '200,204,301,302,307,403,500' -e -t [number] -o common.results
+     ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/common.txt -s '200,204,301,302,307,403,500' -e -t [number] -x .exte,.exte,.exte -o exte.common.results
+   * With big.txt:
+     ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/big.txt -s '200,204,301,302,307,403,500' -e -t [number] -o big.results
+     ###### gobuster dir -u [url] -w /usr/share/wordlists/dirb/big.txt -s '200,204,301,302,307,403,500' -e -t [number] -x .exte,.exte,.exte -o exte.big.results
+   
+   * With medium.txt:
+     ###### gobuster dir -u [url] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -s '200,204,301,302,307,403,500' -e -t [number] -o medium.results
+     ###### gobuster dir -u [url] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -s '200,204,301,302,307,403,500' -e -t [number] -x .exte,.exte,.exte -o exte.medium.results
+
 
 ## Exploits
 ### Windows
