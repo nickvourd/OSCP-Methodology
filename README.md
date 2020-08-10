@@ -152,6 +152,8 @@ git clone https://github.com/worawit/MS17-010.git
   
 ## Potatos
 ### Hot Potato
+Affected systems: Windows 7,8,10, Server 2008, Server 2012
+
 
 ## Privilege Escalation
 ### Windows
