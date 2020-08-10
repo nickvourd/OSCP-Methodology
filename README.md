@@ -160,7 +160,24 @@ Guide: https://foxglovesecurity.com/2016/01/16/hot-potato/
 
 Use: https://github.com/foxglovesec/Potato
 
+### Juicy Potato
+What is: Juicy potato is basically a weaponized version of the RottenPotato exploit that exploits the way Microsoft handles tokens. Through this, we achieve privilege escalation. 
 
+Affetcted Systems: 
+ * Windows 7 Enterprise 
+ * Windows 8.1 Enterprise 
+ * Windows 10 Enterprise 
+ * Windows 10 Professional 
+ * Windows Server 2008 R2 Enterprise 
+ * Windows Server 2012 Datacenter 
+ * Windows Server 2016 Standard
+
+Warning: Juicy Potato doesn’t work in Windows Server 2019
+
+Guides: https://0x1.gitlab.io/exploit/Windows-Privilege-Escalation/#juicy-potato-abusing-the-golden-privileges
+https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato#:~:text=Juicy%20potato%20is%20basically%20a,this%2C%20we%20achieve%20privilege%20escalation.
+
+Use: https://github.com/ohpe/juicy-potato
 ## Privilege Escalation
 ### Windows
 * systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
