@@ -171,6 +171,8 @@ Affetcted Systems:
  * Windows Server 2008 R2 Enterprise 
  * Windows Server 2012 Datacenter 
  * Windows Server 2016 Standard
+ 
+ Find CLSID here: https://ohpe.it/juicy-potato/CLSID/
 
 Warning: Juicy Potato doesn’t work in Windows Server 2019
 
