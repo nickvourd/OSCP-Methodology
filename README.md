@@ -152,7 +152,13 @@ git clone https://github.com/worawit/MS17-010.git
   
 ## Potatos
 ### Hot Potato
+What is: Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
+
 Affected systems: Windows 7,8,10, Server 2008, Server 2012
+
+Guide: https://foxglovesecurity.com/2016/01/16/hot-potato/
+
+Use: https://github.com/foxglovesec/Potato
 
 
 ## Privilege Escalation
