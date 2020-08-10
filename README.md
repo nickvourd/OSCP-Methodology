@@ -10,7 +10,6 @@ OSCP Methodology
 * service -> exploit (searchsploit + google)
 * banner
 * default creds (hydra)
-* default creds with nsr (hydra)
 * Anonymous login
 * Put files
   * if exists web service, check if web and ftp has the same path
