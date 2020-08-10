@@ -174,7 +174,7 @@ Affetcted Systems:
  
  Find CLSID here: https://ohpe.it/juicy-potato/CLSID/
 
-Warning: Juicy Potato doesn’t work in Windows Server 2019
+##### Warning: Juicy Potato doesn’t work in Windows Server 2019
 
 Guides: https://0x1.gitlab.io/exploit/Windows-Privilege-Escalation/#juicy-potato-abusing-the-golden-privileges
 https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato#:~:text=Juicy%20potato%20is%20basically%20a,this%2C%20we%20achieve%20privilege%20escalation.
