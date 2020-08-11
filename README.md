@@ -33,6 +33,11 @@ OSCP Methodology
   ##### nmap -sV -sC --open -T4  -p 139,445 --script=vuln --script-args=unsafe=1 <ip>
 * enum4linux
 * smbclient
+   *smbclient -L <ip> -N
+ 
+   * connect to samba in a specific share with creds
+      * smbclient \\\\ip\\share -U username
+
 
 #### Http/Https
  * Service -> exploit (searchsploit + google)
