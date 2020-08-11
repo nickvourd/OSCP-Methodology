@@ -56,6 +56,7 @@ OSCP Methodology
      ###### go
  
  ###### nmap
+ ###### nmap -p 1433 --script ms-sql-xp-cmdshell --script-args mssql.username=sa,mssql.password=\<pass>,ms-sql-xp-cmdshell.cmd="net user " \<ip>
 
 #### Http/Https
  * Service -> exploit (searchsploit + google)
