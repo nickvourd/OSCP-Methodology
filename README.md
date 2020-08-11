@@ -232,7 +232,7 @@ Use: https://github.com/ohpe/juicy-potato
      * if interactive module enabled 100% runas as other user
      * if domain and user exist try again runas as other user
      
-     ##### runas /savecred /noprofile /user:\<Domain>\\\<user> C:\\\<path>\\\<exefile>
+     ##### runas /savecred /user:\<Domain>\\\<user> C:\\\<path>\\\<exefile>
    * Stored as plaintext or base64
      * C:\unattend.xml
      * C:\Windows\Panther\Unattend.xml
