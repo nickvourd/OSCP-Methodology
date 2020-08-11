@@ -207,7 +207,13 @@ Use: https://github.com/ohpe/juicy-potato
      * SeCreateToken Privilege
      * SeLoadDriver Privilege
      * SeImpersonate & SeAssignPrimaryToken Priv.
-   
+  
+ * Users of system and their groups
+   * net user
+   * net user <user>
+     *needs password?
+     *groups?
+ 
  * Windows-Exploit-Suggester
    * python windows-exploit-suggester.py --database 2020-08-09-mssb.xls --systeminfo grandpa.txt
  
