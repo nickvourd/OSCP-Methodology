@@ -48,6 +48,8 @@ OSCP Methodology
      ###### go
       Configuration option 'show advanced options' changed from 1 to 1. Run the RECONFIGURE statement to install.
       (return status = 0)
+     ###### RECONFIGURE
+     ###### go
      ###### EXEC SP_CONFIGURE N'xp_cmdshell', 1
      ###### go
       Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE statement to install.
