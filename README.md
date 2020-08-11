@@ -185,6 +185,19 @@ Guide: https://foxglovesecurity.com/2016/01/16/hot-potato/
 
 Use: https://github.com/foxglovesec/Potato
 
+### Rotten Potato
+What is: Rotten Potato and its standalone variants leverages the privilege escalation chain based on BITS service having the MiTM listener on 127.0.0.1:6666 and when you have SeImpersonate or SeAssignPrimaryToken privileges
+
+Affetced sytsems:  Windows 7,8,10, Server 2008, Server 2012, Server 2016
+
+Guide: https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/
+https://0xdf.gitlab.io/2018/08/04/htb-silo.html
+
+Use: https://github.com/nickvourd/lonelypotato 
+
+* Rotten Potato from default opens meterpreter, use lonely potato which opens in line shell
+
+
 ### Juicy Potato
 What is: Juicy potato is basically a weaponized version of the RottenPotato exploit that exploits the way Microsoft handles tokens. Through this, we achieve privilege escalation. 
 
