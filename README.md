@@ -253,6 +253,12 @@ Use: https://github.com/ohpe/juicy-potato
      *Password required
      *groups
  
+ * Enumerating World Writable Directories:
+   ##### accesschk.exe -uws "Everyone" "C:\Program Files"
+ 
+ * Applications installed versions:
+   ###### wmic product get name, version, vendor
+ 
  * Running processes
    ##### tasklist /SVC > process.txt
    
