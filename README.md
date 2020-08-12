@@ -253,8 +253,11 @@ Use: https://github.com/ohpe/juicy-potato
      *Password required
      *groups
  
- * Running proccesses
-   ##### tasklist /SVC 
+ * Running processes
+   ##### tasklist /SVC > process.txt
+   
+ * Schedule tasks
+   ##### schtasks /query /fo LIST /v > schedule.txt
 
  * Windows-Exploit-Suggester
    * python windows-exploit-suggester.py --database 2020-08-09-mssb.xls --systeminfo grandpa.txt
