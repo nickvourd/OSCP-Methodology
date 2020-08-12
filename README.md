@@ -255,7 +255,7 @@ Use: https://github.com/ohpe/juicy-potato
  
  * Enumerating World Writable Directories:
    ##### accesschk.exe -uws "Everyone" "C:\Program Files"
- 
+   
  * Applications installed versions:
    ###### wmic product get name, version, vendor
  
