@@ -250,8 +250,8 @@ Use: https://github.com/ohpe/juicy-potato
  * Users of system and their groups
    * net user
    * net user <user>
-     *Password required
-     *groups
+      *Password required
+      *groups
  
  * Enumerating World Writable Directories:
    ##### accesschk.exe -uws "Everyone" "C:\Program Files"
