@@ -253,6 +253,9 @@ Use: https://github.com/ohpe/juicy-potato
      *Password required
      *groups
  
+ * Running proccesses
+   ##### tasklist /SVC 
+
  * Windows-Exploit-Suggester
    * python windows-exploit-suggester.py --database 2020-08-09-mssb.xls --systeminfo grandpa.txt
  
